@@ -1,0 +1,20 @@
+{
+  "add": "add to cart",
+  "cart": "cart",
+  "color": "Color",
+  "price": "Price",
+  "total": "total",
+  "all": "all",
+  "green": "green",
+  "black": "black",
+  "red": "red",
+  "white": "white",
+  "silver": "silver",
+  "max price should be greater than min price": "max price should be greater than min price",  
+  "order": "order",
+  "fullName": "full name",
+  "address": "address",
+  "email": "email",
+  "city": "city",
+  "confirm": "confirm"
+}
