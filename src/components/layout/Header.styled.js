@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { smallAndLow, mediumAndUp } from '../../theme';
 
 export const HeaderContainer = styled.div`
@@ -19,22 +20,20 @@ export const HamburgerIcon = styled.div`
 
 export const HeaderStyle = styled.div`
     padding: 1.5em;
-    display: ${props => (props.show ? 'flex' : 'none')}
+    display: ${props => props.show ? 'flex' : 'none'};
     flex-direction: column;
     align-items: center;
-    .Link__item,.logo,.auth, .search{
-        padding-bottom: 0.5em;
+    
+    .Links {
+        display: flex;
+        flex-dicoration: column;
     }
-    .Links{
-        display:flex;
-        flex-direction: column;
-    }
-    .auth{
-        .auth__action{
+    .auth {
+        .auth__action {
             color: green;
         }
     }
-    .form-control{
+    .form-control {
         padding: 12px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -45,11 +44,24 @@ export const HeaderStyle = styled.div`
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            .Links{
+            .Links {
                 flex-direction: row;
-                .Link__item{
+                .Link__item {
                     padding-left: 1em;
                 }
             }
         `}
+`;
+
+export const Logo = styled.div`
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 1px 1px black;
+    color: darkblue;
+`;
+
+export const LinkItem = styled(Link)`
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    color: darkblue;
 `;

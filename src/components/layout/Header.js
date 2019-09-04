@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { HeaderStyle, HamburgerIcon, HeaderContainer } from './Header.styled';
+import { HeaderStyle, HamburgerIcon, HeaderContainer, Logo, LinkItem } from './Header.styled';
 import Search from '../Search';
 
 export default class Header extends React.Component {
@@ -31,18 +30,18 @@ export default class Header extends React.Component {
       <div>
         <HeaderContainer>
           <HeaderStyle show={show}>
-            <div className="logo">logo</div>
+            <Logo>Laptop world</Logo>
             <Search />
             <div className="Links">
-              <Link className="Link__item" to="/cart">
+              <LinkItem className="Link__item" to="/cart">
                 <i className="fas fa-cart-plus">cart</i>
-              </Link>
-              <Link className="Link__item" to="/">
+              </LinkItem>
+              <LinkItem className="Link__item" to="/">
                 <i className="fas fa-home">home</i>
-              </Link>
-              <Link className="Link__item" to="/products">
+              </LinkItem>
+              <LinkItem className="Link__item" to="/products">
                 products
-              </Link>
+              </LinkItem>
             </div>
           </HeaderStyle>
           <HamburgerIcon onClick={this.toggleMenu}>
