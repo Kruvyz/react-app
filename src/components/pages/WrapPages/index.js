@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import Cart from './Cart';
-import Products from './Filter';
-import Details from './Details';
-import Header from '../layout/Header';
+import Home from '../Home';
+import Cart from '../Cart';
+import Products from '../Filter';
+import Details from '../Details';
+import Header from '../../Header';
 import Wrap from './WrapPages.styled';
-import Footer from '../layout/Footer';
+import Footer from '../../Footer';
 
 const WrapPages = () => {
   return (

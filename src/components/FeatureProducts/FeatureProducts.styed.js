@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { smallAndLow, mediumAndUp } from '../../../theme';
+import { smallAndLow, mediumAndUp } from '../../theme';
 
 export const FeaturedContainer = styled.div`
   .header {
