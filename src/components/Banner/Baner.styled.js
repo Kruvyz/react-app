@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { smallAndLow, mediumAndUp } from '../../../theme';
+import { smallAndLow, mediumAndUp } from '../../theme';
 
 export const BanerContainer = styled.div`
   padding: 2em;

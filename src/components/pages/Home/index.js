@@ -1,9 +1,7 @@
 import React from 'react';
-import ProductList from '../../ProductList';
-import Header from '../../layout/Header';
-import FeatureProducts from './FeatureProducts';
-import Sales from './Sales';
-import Baner from './Baner';
+import FeatureProducts from '../../FeatureProducts';
+import Sales from '../../Sales';
+import Baner from '../../Banner';
 
 const Home = () => {
   return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ProductCard from '../../ProductCard';
-import { productsFetchData } from '../../../actions';
-import { getFeaturedProducts } from '../../../selectors';
+import ProductCard from '../ProductCard';
+import { productsFetchData } from '../../actions';
+import { getFeaturedProducts } from '../../selectors';
 import { FeaturedContainer, FeatureList } from './FeatureProducts.styed';
 
 class FeatureProducts extends Component {
