@@ -1,5 +1,7 @@
 import React from 'react';
 import { LinkItem } from '../Link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus, faHome, faLaptop } from '@fortawesome/free-solid-svg-icons';
 import FooterStyle from './Footer.styled';
 
 const Footer = () => {
@@ -7,13 +9,13 @@ const Footer = () => {
     <FooterStyle>
       <div className="Links">
         <LinkItem className="Link__item" to="/cart">
-          <i className="fas fa-cart-plus">cart</i>
+          <FontAwesomeIcon icon={ faCartPlus }/>cart
         </LinkItem>
         <LinkItem className="Link__item" to="/">
-          <i className="fas fa-home">home</i>
+          <FontAwesomeIcon icon={ faHome }/>home
         </LinkItem>
         <LinkItem className="Link__item" to="/products">
-          products
+          <FontAwesomeIcon icon={ faLaptop }/>products
         </LinkItem>
       </div>
     </FooterStyle>
