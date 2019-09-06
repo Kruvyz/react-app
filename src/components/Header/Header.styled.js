@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { smallAndLow, mediumAndUp } from '../../theme';
 
 export const HeaderContainer = styled.div`
@@ -57,11 +56,5 @@ export const Logo = styled.div`
     font-size: 30px;
     font-weight: 900;
     text-shadow: 1px 1px black;
-    color: darkblue;
-`;
-
-export const LinkItem = styled(Link)`
-    padding-bottom: 0.5em;
-    text-decoration: none;
     color: darkblue;
 `;
