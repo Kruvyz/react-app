@@ -1,5 +1,6 @@
 import React from 'react';
-import { HeaderStyle, HamburgerIcon, HeaderContainer, Logo, LinkItem } from './Header.styled';
+import { HeaderStyle, HamburgerIcon, HeaderContainer, Logo } from './Header.styled';
+import { LinkItem } from '../Link';
 import Search from '../Search';
 
 export default class Header extends React.Component {

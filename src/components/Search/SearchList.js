@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { LinkItem } from '../Link';
 import { connect } from 'react-redux';
 import { productsFetchData } from '../../actions';
 import { searchProducts } from '../../selectors';
@@ -9,14 +9,14 @@ const SearchList = props => {
   return (
     <Fragment>
       {searchList.map(item => (
-        <Link
+        <LinkItem
           onClick={props.closeSearch}
           key={item.id}
           className="Link__item"
           to={`/products/${item.id}`}
         >
           {item.name}
-        </Link>
+        </LinkItem>
       ))}
     </Fragment>
   );
