@@ -1,6 +1,8 @@
 import React from 'react';
-import { HeaderStyle, HamburgerIcon, HeaderContainer, Logo } from './Header.styled';
 import { LinkItem } from '../Link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus, faHome, faLaptop, faBars } from '@fortawesome/free-solid-svg-icons';
+import { HeaderStyle, HamburgerIcon, HeaderContainer, Logo } from './Header.styled';
 import Search from '../Search';
 
 export default class Header extends React.Component {
@@ -35,18 +37,18 @@ export default class Header extends React.Component {
             <Search />
             <div className="Links">
               <LinkItem className="Link__item" to="/cart">
-                <i className="fas fa-cart-plus">cart</i>
+                <FontAwesomeIcon icon={ faCartPlus }/>cart
               </LinkItem>
               <LinkItem className="Link__item" to="/">
-                <i className="fas fa-home">home</i>
+                <FontAwesomeIcon icon={ faHome }/>home
               </LinkItem>
               <LinkItem className="Link__item" to="/products">
-                products
+                <FontAwesomeIcon icon={ faLaptop }/>products
               </LinkItem>
             </div>
           </HeaderStyle>
           <HamburgerIcon onClick={this.toggleMenu}>
-            <i className="fas fa-bars" />
+            <FontAwesomeIcon icon={ faBars }/>
           </HamburgerIcon>
         </HeaderContainer>
       </div>
