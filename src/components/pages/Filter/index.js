@@ -6,6 +6,7 @@ import FilterContainer from './Filter.styled';
 import { getFilteredProducts } from '../../../selectors';
 import FilteredList from './FilteredList';
 import i18n from '../../../i18n';
+import Loader from '../../Loader';
 
 class Products extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class Products extends Component {
     const { isLoading, hasError, t } = this.props;
     const { minPrice, maxPrice } = this.state;
 
-    if (isLoading) return <h1>Loading..</h1>;
+    if (isLoading) return <Loader />;
     if (hasError) return <p>Sorry. Failed loading data</p>;
 
     return (

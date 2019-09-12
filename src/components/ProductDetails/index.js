@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { productDetailsFetchData } from '../../actions';
 import { getItemById } from '../../selectors';
 import Details from '../Details';
+import LoaderComponent from '../Loader';
 
 class ProductDetails extends Component {
   componentDidMount() {
@@ -14,7 +15,7 @@ class ProductDetails extends Component {
   render() {
     const { isLoading, hasError, product } = this.props;
 
-    if (isLoading) return <h1>Loading..</h1>;
+    if (isLoading) return <LoaderComponent />;
     if (hasError) return <p>Sorry. Failed loading data</p>;
 
     return <div>{product ? <Details {...product} /> : ''}</div>;
