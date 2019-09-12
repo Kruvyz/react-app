@@ -7,11 +7,12 @@ export const SearchContainer = styled.div`
     position: relative;
   }
   .form-control {
-    width: 15em;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    box-sizing: border-box;
   }
   .Link__item {
     background: white;
@@ -27,10 +28,14 @@ export const SearchContainer = styled.div`
   .search-body {
     position: absolute;
   }
+
+  ${mediumAndUp`
+    width: 15em;
+  `}
 `;
 
 export const SearchBackground = styled.div`
-    display:  ${props => (props.showSearches ? 'block' : 'none')}
+    display:  ${props => (props.showSearches ? 'block' : 'none')};
     color: white;
     position: fixed;
     top: 0;

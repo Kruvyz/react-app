@@ -3,9 +3,11 @@ import { mediumAndUp } from '../../theme';
 
 export const NavigationContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 
   ${mediumAndUp`
-    flex-direction: row;  
+    justify-content: normal;
+    width: auto;
   `}
 `;

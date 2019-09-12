@@ -7,9 +7,10 @@ const LinkItem = styled(Link)`
   text-decoration: none;
   color: darkblue;
   display: block;
+  margin-left: 10px;
   
   ${mediumAndUp`
-    padding-left: 1em;
+    margin-left: 1em;
   `}
 `;
 

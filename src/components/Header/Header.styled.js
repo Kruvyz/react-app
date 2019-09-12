@@ -11,7 +11,7 @@ export const HeaderStyle = styled.div`
     padding: 1.5em;
     display: ${props => props.hidden ? 'none' : 'flex'};
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     
     .auth {
         .auth__action {
@@ -24,11 +24,19 @@ export const HeaderStyle = styled.div`
         border-radius: 4px;
         resize: vertical;
     }
+    > * {
+        margin: 10px 0;
+    }
     ${mediumAndUp`
             padding: 1em;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            align-items: center;
+
+            > * {
+                margin: 0;
+            }
         `}
 `;
 
@@ -37,6 +45,7 @@ export const Logo = styled.div`
     font-weight: 900;
     text-shadow: 1px 1px black;
     color: darkblue;
+    text-align: center;
 `;
 
 export const HamburgerIcon = styled.div`
