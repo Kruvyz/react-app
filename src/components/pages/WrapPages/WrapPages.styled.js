@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-const wrap = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300');
+export const Content = styled.div`
+  padding-bottom: 96px;
 `;
-export default wrap;
+
+export const Page = styled.div`
+  position: relative;
+  min-height: 100vh;
+`;

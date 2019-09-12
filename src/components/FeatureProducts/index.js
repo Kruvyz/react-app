@@ -4,6 +4,7 @@ import ProductCard from '../ProductCard';
 import { productsFetchData } from '../../actions';
 import { getFeaturedProducts } from '../../selectors';
 import { FeaturedContainer, FeatureList } from './FeatureProducts.styed';
+import LoaderComponent from '../Loader';
 
 class FeatureProducts extends Component {
   componentDidMount() {
@@ -13,7 +14,7 @@ class FeatureProducts extends Component {
 
   render() {
     const { isLoading, hasError, interestigProducts } = this.props;
-    if (isLoading) return <h1>Loading..</h1>;
+    if (isLoading) return <LoaderComponent />;
     if (hasError) return <p>Sorry. Failed loading data</p>;
 
     return (

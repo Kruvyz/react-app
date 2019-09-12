@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import LoaderComponent from '../Loader';
 import { productsFetchData } from '../../actions';
 import ProductCard from '../ProductCard';
 import ListConteiner from './ProductList.styled';
@@ -14,7 +15,7 @@ class ProductsList extends Component {
   render() {
     const { isLoading, hasError, products } = this.props;
 
-    if (isLoading) return <h1>Loading..</h1>;
+    if (isLoading) return <LoaderComponent />
     if (hasError) return <p>Sorry. Failed loading data</p>;
 
     return (
