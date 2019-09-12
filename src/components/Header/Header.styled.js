@@ -7,26 +7,12 @@ export const HeaderContainer = styled.div`
   background: #f4f4f4;
 `;
 
-export const HamburgerIcon = styled.div`
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  cursor: pointer;
-  ${mediumAndUp`
-        display: none;
-    `}
-`;
-
 export const HeaderStyle = styled.div`
     padding: 1.5em;
-    display: ${props => props.show ? 'flex' : 'none'};
+    display: ${props => props.hidden ? 'none' : 'flex'};
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     
-    .Links {
-        display: flex;
-        flex-dicoration: column;
-    }
     .auth {
         .auth__action {
             color: green;
@@ -38,16 +24,18 @@ export const HeaderStyle = styled.div`
         border-radius: 4px;
         resize: vertical;
     }
+    > * {
+        margin: 10px 0;
+    }
     ${mediumAndUp`
             padding: 1em;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            .Links {
-                flex-direction: row;
-                .Link__item {
-                    padding-left: 1em;
-                }
+            align-items: center;
+
+            > * {
+                margin: 0;
             }
         `}
 `;
@@ -57,4 +45,15 @@ export const Logo = styled.div`
     font-weight: 900;
     text-shadow: 1px 1px black;
     color: darkblue;
+    text-align: center;
+`;
+
+export const HamburgerIcon = styled.div`
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  ${mediumAndUp`
+        display: none;
+    `}
 `;

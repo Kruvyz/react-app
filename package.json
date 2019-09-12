@@ -32,6 +32,7 @@
     "i18next-browser-languagedetector": "^3.0.1",
     "i18next-xhr-backend": "^2.0.1",
     "react": "^16.8.3",
+    "react-device-detect": "^1.7.5",
     "react-dom": "^16.8.3",
     "react-hot-loader": "^4.7.2",
     "react-i18next": "^10.4.2",
